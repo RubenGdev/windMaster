@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>The Best Wind Website!</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Capetown Forecast</h1>
+    </div>
+
+    <div class="real-time-now">
+        <iframe class="reduce-frame" src="https://capekiting.co.za/kitebeach/#amchart1"width="500" height="500" frameborder="no" scrolling="no" ></iframe>
+        <iframe class="reduce-frame" src="http://mac-wind.appspot.com/" width="300" height="500" frameborder="no" scrolling="no" ></iframe>
+    </div>
+
+    <div class="windguru forecast">
+    <script id="wg_fwdg_908857_100_1668956286987">
+    (function (window, document) {
+      var loader = function () {
+        var arg = ["s=908857" ,"m=100","uid=wg_fwdg_908857_100_1668956286987" ,"wj=knots" ,"tj=c" ,"waj=m" ,"odh=0" ,"doh=24" ,"fhours=240" ,"hrsm=2" ,"vt=forecasts" ,"lng=en" ,"idbs=1" ,"p=WINDSPD,GUST,SMER,TMP"];
+        var script = document.createElement("script");
+        var tag = document.getElementsByTagName("script")[0];
+        script.src = "https://www.windguru.cz/js/widget.php?"+(arg.join("&"));
+        tag.parentNode.insertBefore(script, tag);
+      };
+      window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
+    })(window, document);
+    </script>
+    </div>
+
+
+    <div class="windy forecast">
+        <iframe width="1000" height="400" src="https://embed.windy.com/embed2.html?lat=-36.351&lon=18.018&detailLat=-33.101&detailLon=18.029&width=1000&height=400&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=true&metricWind=default&metricTemp=default&radarRange=-1" frameborder="0"></iframe>
+    </div>
+
+    <div class="footer"></div>
+    
+</body>
+</html>

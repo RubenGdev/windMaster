@@ -1,0 +1,50 @@
+body{
+    text-align: center;
+}
+h1{
+    display: inline-block;
+    color: blue;
+    padding-top: 20px;
+}
+.real-time-now{
+    margin: 50px auto 50px auto;
+}
+.header{
+    height: 100px;
+    background-image: linear-gradient(
+    to bottom,
+    rgba(86, 206, 216, 0.5),
+    rgb(239, 254, 255)
+  ), url("profileruben.jpg");
+    text-align: center;
+}
+
+.forecast{
+    width: 70%;
+    display:inline-block;
+}
+
+
+.footer{
+    height: 150px;
+    background-image: linear-gradient(
+    to top,
+    rgba(86, 206, 216, 0.5),
+    rgb(239, 254, 255)
+  ), url("profileruben.jpg");
+    text-align: center;
+}
+
+#reduce-frame{
+    -ms-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+
+    -ms-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
